@@ -14,16 +14,15 @@ const int diskoKnapp = 13;
 
 
 // tidsintervaller for millis()
-long arbeidsIntervall = 10000;// 20 min i millisekunder 1 200 000 1200000;
-long femMinPause =  5000; //300000
-long femtenMinPause = 15000; //900000
+long arbeidsIntervall = 120000;// 20 min i millisekunder 1 200 000 1200000;
+long femMinPause =  300000; //300000
+long femtenMinPause = 900000; //900000
 long pauseIntervall; 
 unsigned long startTid; 
 
 
 //dimming: 
 int styrkeRange = analogRead(potentPin) >> 2; //range til HSV skal være 2^8 fremfor 2^10
-
 
 
 
